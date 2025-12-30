@@ -1,4 +1,4 @@
-Football League Predictor / Simulator
+# Football League Simulator
 
 Usage
 
@@ -26,3 +26,4 @@ Notes
 
 - The solver uses an optimistic strategy: it assumes the target club wins all its remaining matches and then attempts to assign other match results to prevent rivals exceeding the target's max points. It uses pruning and a short time limit per club; for very large schedules the solver may not find a scenario even when one exists.
 - If a club is declared impossible, the tool provides a simple explanatory bound (e.g. target's max points vs an opponent's existing or upper-bound points).
+
