@@ -1,0 +1,346 @@
+[LEAGUE]
+Persib : 34
+Borneo : 34
+Persija : 32
+Malut : 31
+PSIM : 24
+Persita : 23
+Persebaya : 22
+Bali : 21
+Arema : 19
+PSM : 19
+Bhayangkara : 19
+Persik : 18
+Madura : 17
+Dewa : 17
+PSBS : 13
+Semen Padang : 10
+Persijap : 9
+Persis : 7
+
+[CLUB TIER]
+1 : Persib,Persija,Persebaya,PSM
+3 : Bhayangkara, Persijap, Persis
+
+[FUTURE MATCHDAY]
+30 Dec : 
+Arema - Persita
+
+3 Jan : 
+Borneo - PSM
+Persija - Persijap
+Madura - Persebaya
+
+4 Jan :
+Persis - Persita
+PSIM - Semen Padang
+Bali - Arema
+Malut - PSBS
+
+5 Jan :
+Bhayangkara - Dewa
+Persik - Persib
+
+9 Jan :
+Persita - Borneo
+PSM - Bali
+
+10 Jan : 
+Persebaya - Malut
+Madura - PSIM
+
+11 Jan : 
+Arema - Persik
+Persib - Persija
+Semen Padang - Persis
+
+12 Jan
+PSBS - Bhayangkara
+Persijap - Dewa
+
+23 Jan :
+Persis - Borneo
+Persija - Madura
+
+24 Jan
+Bali - Semen Padang
+Persita - Bhayangkara
+Malut - Persik
+Persijap - PSM
+
+25 Jan :
+PSIM - Persebaya
+Persib - PSBS
+
+26 Jan : 
+Dewa - Arema
+
+30 Jan :
+Persik - Bali
+Persita - Persija
+
+31 Jan : 
+Persis - Persib
+Madura - PSBS
+Malut - Bhayangkara
+
+1 Feb :
+Borneo - PSIM
+Persebaya - Dewa
+
+2 Feb :
+Arema - Persijap
+PSM - Semen Padang
+
+6 Feb : 
+PSIM - Persis
+Persib - Malut
+
+7 Feb :
+Bhayangkara - Borneo
+Persik - Dewa
+Bali - Persebaya
+Persijap - Madura
+
+8 Feb :
+PSBS - PSM
+Semen Padang - Persita
+Persija - Arema
+
+13 Feb :
+Persik - PSIM
+Persis - Madura
+Malut - Persijap
+
+14 Feb :
+PSM - Dewa
+Persebaya - Bhayangkara
+
+14 Feb :
+Arema - Semen Padang
+Bali - Persija
+
+16 Feb : 
+Persita - PSBS
+Borneo - Persib
+
+20 Feb :
+Persija - PSM
+Persik - Bhayangkara
+Semen Padang - Malut
+
+21 Feb :
+Madura - Arema
+Persijap - Persebaya
+Persis - PSBS
+
+22 Feb :
+Dewa - Borneo
+Persib - Persita
+
+23 Feb :
+PSIM - Bali
+
+24 Feb :
+Malut - Persija
+Bhayangkara - Semen Padang
+
+25 Feb : 
+Persebaya - PSM
+
+26 Feb :
+Borneo - Arema
+Persib - Madura
+Persita - Dewa 
+
+27 Feb :
+PSBS - PSIM
+
+28 Feb :
+Bali - Persijap
+
+1 Mar :
+Persis - Persik
+
+2 Mar : 
+Dewa - Bhayangkara
+Persebaya - Persib
+PSM - Persita
+
+3 Mar :
+Madura - Malut
+Persija - Borneo
+
+4 Mar :
+Semen Padang - PSIM
+
+5 Mar : 
+Persijap - Persis
+Persik - PSBS
+
+6 Mar : 
+Arema - Bali
+
+7 Mar : 
+Malut - PSM
+Borneo - Persebaya
+Persita - Madura
+
+8 Mar : 
+Persija - Dewa
+
+9 Mar : 
+Persib - Persik
+PSBS - Semen Padang
+
+10 Mar : 
+Bhayangkara - Arema
+
+11 Mar : 
+PSIM - Persijap
+
+12 Mar : 
+Persis - Bali
+
+3 Apr : 
+Arema - Malut
+Dewa - PSIM
+
+4 Apr :
+PSM - Persis
+Persebaya - Persita
+
+5 Apr :
+Bhayangkara - Persija
+Madura - Borneo
+Semen Padang - Persib
+
+6 Apr :
+Persik - Persijap
+Bali - PSBS
+
+10 Apr :
+PSIM - PSM
+Persita - Arema
+
+11 Apr :
+Borneo - PSBS
+Madura - Persik
+Persija - Persebaya
+Persijap - Bhayangkara
+
+12 Apr :
+Persis - Semen Padang
+Malut - Dewa
+Persib - Bali
+
+17 Apr :
+Bhayangkara - PSIM
+Persebaya - Madura
+
+18 Apr :
+Arema - Persis
+PSBS - Persija
+PSM - Borneo
+
+19 Apr : 
+Persik - Persita
+Bali - Malut
+
+20 Apr :
+Semen Padang - Persijap
+Dewa - Persib
+
+22 Apr :
+Persis - Bhayangkara
+PSIM - Persija
+
+23 Apr : 
+Persita - Bali
+PSM - Persik
+Malut - Persebaya
+
+24 Apr :
+Persijap - PSBS
+Persib - Arema
+
+25 Apr : 
+Borneo - Semen Padang
+Madura - Dewa
+
+27 Apr : 
+Bali - PSM
+Persija - Persis
+
+28 Apr : 
+Arema - Persebaya
+PSBS - Malut
+
+29 Apr :
+Persik - Borneo
+Semen Padang - Madura
+Dewa - Persijap
+
+30 Apr :
+PSIM - Persita
+Bhayangkara - Persib
+
+2 May :
+Persebaya - PSBS
+Malut - Persis
+
+3 May : 
+Persik - Arema
+Dewa - Semen Padang
+
+4 May :
+Persib - PSIM
+PSM - Bhayangkara
+Persijap - Persija
+
+5 May : 
+Borneo - Persita
+Madura - Bali
+
+8 May : 
+Semen Padang - Persik
+PSBS - Dewa
+
+9 May : 
+Arema - PSM
+Persis - Persebaya
+
+10 May :
+Persija - Persib
+Persita - Persijap
+PSIM - Malut
+
+11 May :
+Bali - Borneo
+Bhayangkara - Madura
+
+15 May :
+Semen Padang - Persebaya
+PSBS - Arema
+
+16 May :
+Persik - Persija
+Malut - Persita
+Persis - Dewa
+
+17 May : 
+Bali - Bhayangkara
+Persijap - Borneo
+PSIM - Madura
+PSM - Persib
+
+23 May :
+Bhayangkara - PSBS
+Arema - PSIM
+Borneo - Malut
+Dewa - Bali
+Madura - PSM
+Persebaya - Persik
+Persib - Persijap
+Persija - Semen Padang
+Persita - Persis 

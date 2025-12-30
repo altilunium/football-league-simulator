@@ -1,0 +1,26 @@
+:root{--bg:#f7f7f9;--card:#fff;--accent:#0b66c3}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Arial}
+body{margin:0;background:var(--bg);color:#111}
+main{max-width:980px;margin:24px auto;padding:20px}
+h1{margin:0 0 12px}
+.input{margin-bottom:16px}
+textarea{width:100%;height:200px;padding:8px;border:1px solid #ddd;border-radius:6px}
+.controls{display:flex;gap:8px;margin-bottom:8px}
+button,input[type=file]{padding:8px 10px;border-radius:6px;border:1px solid #ccc;background:#fff}
+#topbar{position:sticky;top:0;z-index:1200;background:linear-gradient(#ffffff,#fbfbfb);padding:10px 0;border-bottom:1px solid #eee;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+#clubs-list{list-style:none;padding:0;margin:12px 0}
+#clubs-list li{background:var(--card);padding:12px;border-radius:8px;margin-bottom:8px;border:1px solid #eee;display:flex;justify-content:space-between;align-items:center}
+.meta{font-size:0.9rem;color:#555}
+.badge{padding:6px 10px;border-radius:20px;background:#eef;color:#044}
+#scenario{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:90%;max-width:900px;background:var(--card);padding:16px;border-radius:8px;box-shadow:0 6px 30px rgba(0,0,0,0.12)}
+.hidden{display:none}
+#scenario-details{max-height:60vh;overflow:auto;border-top:1px dashed #eee;margin-top:8px;padding-top:8px}
+footer{margin-top:14px;color:#666}
+
+/* SVG chart styles */
+#rank-chart polyline.chart-line{transition:opacity 180ms, stroke-width 180ms}
+#rank-chart text.chart-label{transition:opacity 180ms, font-size 120ms}
+#rank-chart .dimmed{opacity:0.12 !important}
+#rank-chart .highlight{opacity:1 !important; stroke-width:3 !important}
+#rank-chart text.chart-label{cursor:pointer}
+

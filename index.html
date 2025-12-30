@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Football League Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Football League Simulator</h1>
+
+    <section class="input">
+      <div class="controls">
+        <button id="load-file">Load sim.txt (if hosted)</button>
+        <input id="file-input" type="file" accept=".txt" />
+        <button id="simulate">Simulate</button>
+      </div>
+      <label for="raw">Or paste `sim.txt` content:</label>
+      <textarea id="raw" placeholder="Paste sim.txt here"></textarea>
+    </section>
+
+    <section id="results">
+      <h2>Results</h2>
+      <div id="summary">No simulation yet.</div>
+      <ul id="clubs-list"></ul>
+    </section>
+
+    <section id="scenario" class="hidden">
+      <h2>Scenario</h2>
+      <div id="scenario-club"></div>
+      <div id="scenario-details"></div>
+      <button id="close-scenario">Close</button>
+    </section>
+
+    <footer>
+      <small>This tool checks if a club can still finish 1st and shows one constructive scenario when found.</small>
+    </footer>
+  </main>
+</body>
+</html>
