@@ -212,6 +212,7 @@ function drawRankChart(parsed, snapshots){
 document.addEventListener('DOMContentLoaded',()=>{
   const raw = byId('raw'); const loadBtn = byId('load-file'); const fileInput = byId('file-input'); const simulateBtn = byId('simulate');
   const rerunBtn = byId('rerun');
+  const massBtn = byId('mass-simulate');
 
   loadBtn.addEventListener('click', async ()=>{ try{ const r = await fetch('sim2.txt'); raw.value = await r.text(); } catch(e){ alert('Failed to fetch sim2.txt. Paste or use file input.'); } });
   fileInput.addEventListener('change', e=>{ const f=e.target.files[0]; if(!f) return; const rd=new FileReader(); rd.onload=()=> raw.value=rd.result; rd.readAsText(f); });
@@ -233,4 +234,30 @@ document.addEventListener('DOMContentLoaded',()=>{
     // wire rerun button to re-run the exact simulation
     if(rerunBtn){ rerunBtn.onclick = ()=> simulateBtn.click(); }
   });
+
+  if(massBtn){
+    massBtn.addEventListener('click', ()=>{
+      const text = raw.value.trim(); if(!text){ alert('Paste or load sim2.txt first'); return; }
+      const parsed = parseSim2(text);
+      const counts = {};
+      const runs = 1000;
+      for(let i=0;i<runs;i++){
+        const out = simulateProb(parsed);
+        // determine winner using same tie-breaker as render (pts desc, then name asc)
+        const standings = Object.entries(out.final).map(([team,pts])=>({team,pts})).sort((a,b)=>b.pts - a.pts || a.team.localeCompare(b.team));
+        const winner = standings[0].team;
+        counts[winner] = (counts[winner]||0) + 1;
+      }
+      const massEl = byId('mass-table'); massEl.innerHTML = '';
+      const table = document.createElement('table'); table.style.width='100%'; table.style.borderCollapse='collapse';
+      const thead = document.createElement('thead'); thead.innerHTML = '<tr><th style="text-align:left;padding:6px;border-bottom:1px solid #ddd">Team</th><th style="padding:6px;border-bottom:1px solid #ddd">Win %</th><th style="padding:6px;border-bottom:1px solid #ddd">Wins</th></tr>';
+      table.appendChild(thead);
+      const tb = document.createElement('tbody');
+      // ensure all teams present
+      for(const t of Object.keys(parsed.teams)){ if(!(t in counts)) counts[t]=0; }
+      const rows = Object.entries(counts).map(([team,c])=>({team,c,percent:(c/runs)*100})).sort((a,b)=>b.c - a.c || a.team.localeCompare(b.team));
+      for(const r of rows){ const tr = document.createElement('tr'); tr.innerHTML = `<td style="padding:6px;border-bottom:1px solid #f0f0f0">${r.team}</td><td style="padding:6px;border-bottom:1px solid #f0f0f0;text-align:right">${r.percent.toFixed(1)}%</td><td style="padding:6px;border-bottom:1px solid #f0f0f0;text-align:right">${r.c}</td>`; tb.appendChild(tr); }
+      table.appendChild(tb); massEl.appendChild(table);
+    });
+  }
 });
